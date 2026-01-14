@@ -8,7 +8,7 @@ Summary:	Net::IPv6Addr - check validity of IPv6 addresses
 Summary(pl.UTF-8):	Net::IPv6Addr - sprawdza poprawność adresów IPv6
 Name:		perl-Net-IPv6Addr
 Version:	0.2
-Release:	1
+Release:	2
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
