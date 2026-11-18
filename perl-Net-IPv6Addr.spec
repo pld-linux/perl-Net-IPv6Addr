@@ -7,18 +7,17 @@
 Summary:	Net::IPv6Addr - check validity of IPv6 addresses
 Summary(pl.UTF-8):	Net::IPv6Addr - sprawdza poprawność adresów IPv6
 Name:		perl-Net-IPv6Addr
-Version:	0.2
-Release:	2
+Version:	1.02
+Release:	1
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	cd06f0422ddb3ac119e2ef1e27aa9339
-URL:		http://search.cpan.org/dist/Net-IPv6Addr/
+Source0:	https://www.cpan.org/authors/id/B/BK/BKB/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	efe0a7560097e20a26669c84d089d4c1
+URL:		https://metacpan.org/dist/Net-IPv6Addr
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl(Math::Base85)
-BuildRequires:	perl(Net::IPv4Addr)
 %endif
 Suggests:	perl-Math-Base85
 BuildArch:	noarch
@@ -60,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README
+%doc Changes README
 %{perl_vendorlib}/Net/*.pm
 %{_mandir}/man3/*
